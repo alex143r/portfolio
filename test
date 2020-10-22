@@ -1,0 +1,26 @@
+ <p>
+            My name is Alexander Obel Tyllesen, and i'm a student in
+            multimediadesign. I'm really passionate about web development and
+            creating and improving digital solutions that improve user's
+            experience on the web.
+          </p>
+
+
+
+          <div class="timeline_wrapper">
+          <div class="timeline_item">
+            <a class="">
+              <div class="timeline_image_wrapper">
+                <img class="timeline_image_bg" src="projects/snif.PNG" />
+              </div>
+            </a>
+            <div class="timeline_name_wrapper">
+              <a href="">
+                <div class="timeline_year">2020</div>
+                <h2 class="timeline_name">Snifs Sparehus</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+     <img class="timeline_image_bg" src="projects/snif.PNG" />
