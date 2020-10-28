@@ -1,128 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/dtq5ngs.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="navstyle">
-          <a href="index.html">Alexander Tyllesen</a>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/dtq5ngs.css" />
+</head>
 
-        <div id="menuknap" class="">☰</div>
-        <ul id="menu" class="navstyle hide">
-          <li><a href="">About me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header>
+    <nav>
+      <ul class="navstyle">
+        <a href="index.html">Alexander Tyllesen</a>
+      </ul>
 
-    <section id="content">
-      <div class="content_wrapper">
-        <div class="text_wrapper">
-          <h2 id="intro_title" class="bottom_fade">
-            Alexander Obel Tyllesen, aspiring front-end developer and student in
-            multimediadesign. Passionate about creating and improving digital
-            solutions.
-          </h2>
-          <p id="intro_text" class="bottom_fade"></p>
-        </div>
+      <div id="menuknap" class="">☰</div>
+      <ul id="menu" class="navstyle hide">
+        <li><a href="">About me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="content">
+    <div class="content_wrapper">
+      <div class="img_wrap anim anim_up" data-delay="1.5s">
+        <img src="pic/posty.PNG" />
       </div>
-      <div id="about_wrapper">
-        <div id="skills_container">
-          <h2 id="skills_title" class="about_title">Skills</h2>
-          <ul id="skills_text" class="show_scroll">
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-            <li>Git/Github</li>
-            <li>React</li>
-            <li>And learning more</li>
-          </ul>
-        </div>
+      <div class="text_wrapper">
+        <h2 id="intro_title" class="anim anim_up" data-delay=".5s">
+          Alexander Obel
+        </h2>
+        <h1 id="intro_title" class="anim anim_up" data-delay="1s">
+          Tyllesen
+        </h1>
 
-        <div id="about_container">
-          <h2 class="about_title">About Me</h2>
-          <p>
-            We are Rezo Zero, a digital creative agency that designs and
-            develops unique brand identities and tailor-made digital solutions.
-            We help our clients from the definition of their strategy to the
-            realization of their digital ecosystem. At the heart of our approach
-            is the constant search for the juncture between aesthetic beauty and
-            technical performance. We envision each of our projects as a
-            singular piece at the service of our clients’ communication goals.
-            We want them to be resolutely turned towards agility and simplicity
-            to face the complex challenges of the modern world.
-          </p>
-        </div>
+        <p id="intro_text" class="anim anim_side" data-delay=".5s" data-type="anim_side">
+          Multimediadesign student. Aspiring front-end developer. Currently
+          Godgamer69.
+        </p>
       </div>
-
-      <h2 id="timeline_title">Projects</h2>
-      <div id="timeline">
-        <div class="timeline_line"></div>
-        <div class="timeline_wrapper">
-          <div class="timeline_item">
-            <a class="">
-              <div class="timeline_image_wrapper">
-                <div
-                  class="image_inner"
-                  style="background-image: url('projects/snif.PNG')"
-                ></div>
-              </div>
-            </a>
-            <div class="timeline_name_wrapper">
-              <a href="">
-                <div class="timeline_year">2020</div>
-                <h2 class="timeline_name">Snifs Sparehus</h2>
-              </a>
-            </div>
+      <div>
+        <div class="mouse_container">
+          <div class="mouse">
+            <span></span>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="timeline_item">
-            <a class="">
-              <div class="timeline_image_wrapper">
-                <div
-                  class="image_inner"
-                  style="
+    <div id="about_wrapper">
+      <div id="skills_container">
+        <h2 id="skills_title" class="about_title">Skills</h2>
+        <ul id="skills_text">
+          <li class="anim anim_up" data-delay=".5s">Html</li>
+          <li class="anim anim_up" data-delay=".5s">Css</li>
+          <li class="anim anim_up" data-delay=".5s">Javascript</li>
+          <li class="anim anim_up" data-delay=".5s">Git/Github</li>
+          <li class="anim anim_up" data-delay=".5s">React</li>
+        </ul>
+      </div>
+
+      <div id="about_container">
+        <h2 class="about_title">About Me</h2>
+        <p>
+          My name is Alexander Obel Tyllesen, and i'm 20 year old
+          Multimediadesign student studying at KEA. I have a big love for web
+          development, and as a frontend developer i love to work on and
+          improve projects, especially regarding optimizing the user
+          experience.
+        </p>
+      </div>
+    </div>
+
+    <h2 id="timeline_title">Projects</h2>
+    <div id="timeline">
+      <div class="timeline_line"></div>
+      <div class="timeline_wrapper">
+        <div class="timeline_item">
+          <a class="">
+            <div class="timeline_image_wrapper anim" data-type="parallax">
+              <div class="image_inner" style="background-image: url('projects/snifs_sparehus.png')"></div>
+            </div>
+          </a>
+          <div class="timeline_name_wrapper">
+            <a href="">
+              <div class="timeline_year">2020</div>
+              <h2 class="timeline_name">Snifs Sparehus</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline_item">
+          <a class="">
+            <div class="timeline_image_wrapper anim" data-type="parallax">
+              <div class="image_inner" style="
                     background-image: url('projects/hogwartsstudentlist.PNG');
-                  "
-                ></div>
-              </div>
-            </a>
-            <div class="timeline_name_wrapper">
-              <a href="">
-                <div class="timeline_year">2020</div>
-                <h2 class="timeline_name">Hogwarts Student List</h2>
-              </a>
+                  "></div>
             </div>
+          </a>
+          <div class="timeline_name_wrapper">
+            <a href="">
+              <div class="timeline_year">2020</div>
+              <h2 class="timeline_name">Hogwarts Student List</h2>
+            </a>
           </div>
+        </div>
 
-          <div class="timeline_item">
-            <a class="">
-              <div class="timeline_image_wrapper">
-                <div
-                  class="image_inner"
-                  style="background-image: url('projects/gittebjorn.PNG')"
-                ></div>
-              </div>
-            </a>
-            <div class="timeline_name_wrapper">
-              <a href="">
-                <div class="timeline_year">2020</div>
-                <h2 class="timeline_name">gittebjorn.dk</h2>
-              </a>
+        <div class="timeline_item">
+          <a class="">
+            <div class="timeline_image_wrapper anim" data-type="parallax">
+              <div class="image_inner" style="background-image: url('projects/gittebjorn.PNG')"></div>
             </div>
+          </a>
+          <div class="timeline_name_wrapper">
+            <a href="">
+              <div class="timeline_year">2020</div>
+              <h2 class="timeline_name">gittebjorn.dk</h2>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>
