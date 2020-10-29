@@ -12,8 +12,8 @@
 <body>
   <header>
     <nav>
-      <ul class="navstyle">
-        <a href="index.html">Alexander Tyllesen</a>
+      <ul class="navstyle logo">
+        <a href="index.html">AOT</a>
       </ul>
 
       <div id="menuknap" class="">☰</div>
@@ -27,31 +27,34 @@
 
   <section id="content">
     <div class="content_wrapper">
-      <div class="img_wrap anim anim_up" data-delay="1.5s">
-        <img src="pic/posty.PNG" />
+      <div class="img_wrap anim anim_up " data-delay="1.5s">
+        <img src="pic/me7.jpg" class="anim parallax" />
       </div>
       <div class="text_wrapper">
-        <h2 id="intro_title" class="anim anim_up" data-delay=".5s">
-          Alexander Obel
-        </h2>
+        <h1 id="intro_title" class="anim anim_up" data-delay=".5s">
+          Alexander
+        </h1>
         <h1 id="intro_title" class="anim anim_up" data-delay="1s">
+          Obel
+        </h1>
+        <h1 id="intro_title" class="anim anim_up" data-delay="1.5s">
           Tyllesen
         </h1>
 
+
         <p id="intro_text" class="anim anim_side" data-delay=".5s" data-type="anim_side">
-          Multimediadesign student. Aspiring front-end developer. Currently
-          Godgamer69.
+          Aspiring front-end developer currently studying multimediadesign at KEA.
         </p>
       </div>
-      <div>
-        <div class="mouse_container">
-          <div class="mouse">
-            <span></span>
-          </div>
+
+    </div>
+    <div>
+      <div class="mouse_container">
+        <div class="mouse">
+          <span></span>
         </div>
       </div>
     </div>
-
     <div id="about_wrapper">
       <div id="skills_container">
         <h2 id="skills_title" class="about_title">Skills</h2>
@@ -60,7 +63,6 @@
           <li class="anim anim_up" data-delay=".5s">Css</li>
           <li class="anim anim_up" data-delay=".5s">Javascript</li>
           <li class="anim anim_up" data-delay=".5s">Git/Github</li>
-          <li class="anim anim_up" data-delay=".5s">React</li>
         </ul>
       </div>
 
@@ -81,12 +83,12 @@
       <div class="timeline_line"></div>
       <div class="timeline_wrapper">
         <div class="timeline_item">
-          <a class="">
-            <div class="timeline_image_wrapper anim" data-type="parallax">
-              <div class="image_inner" style="background-image: url('projects/snifs_sparehus.png')"></div>
+          <a class="image_width">
+            <div class="timeline_image_wrapper anim anim_up" data-delay="1.5s">
+              <img class="image_inner parallax" src="projects/snifs_sparehus.png"></img>
             </div>
           </a>
-          <div class="timeline_name_wrapper">
+          <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
             <a href="">
               <div class="timeline_year">2020</div>
               <h2 class="timeline_name">Snifs Sparehus</h2>
@@ -94,15 +96,13 @@
           </div>
         </div>
 
-        <div class="timeline_item">
-          <a class="">
-            <div class="timeline_image_wrapper anim" data-type="parallax">
-              <div class="image_inner" style="
-                    background-image: url('projects/hogwartsstudentlist.PNG');
-                  "></div>
+        <div class="timeline_item  anim anim_up" data-delay=".5s">
+          <a class="image_width">
+            <div class="timeline_image_wrapper anim anim_up" data-delay=".5s">
+              <img class="image_inner parallax" src='projects/hogwarts7.PNG'></img>
             </div>
           </a>
-          <div class="timeline_name_wrapper">
+          <div class=" timeline_name_wrapper">
             <a href="">
               <div class="timeline_year">2020</div>
               <h2 class="timeline_name">Hogwarts Student List</h2>
@@ -111,9 +111,9 @@
         </div>
 
         <div class="timeline_item">
-          <a class="">
-            <div class="timeline_image_wrapper anim" data-type="parallax">
-              <div class="image_inner" style="background-image: url('projects/gittebjorn.PNG')"></div>
+          <a class="image_width">
+            <div class="timeline_image_wrapper" data-type="parallax">
+              <img class="image_inner parallax" src='projects/gittebjorn.PNG'></img>
             </div>
           </a>
           <div class="timeline_name_wrapper">
@@ -127,6 +127,8 @@
     </div>
   </section>
   <script src="script.js"></script>
+  <script src="simpleParallax.js"></script>
+
 </body>
 
 </html>
