@@ -6,16 +6,28 @@ function start() {
   console.log("start");
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
   animateObserve();
+  let images = document.querySelectorAll(".parallax");
+  new simpleParallax(images, {
+    delay: 1,
+    scale: 1.2,
+    transition: 'cubic-bezier(0,0,0,1)'
+  });
 
-  let images = document.querySelectorAll('.parallax');
-  new simpleParallax(images);
+  window.addEventListener("scroll", function (e) {
+    const target = document.querySelectorAll(".scroll")
+
+    let length = target.length;
+    for (let i = 0; i < length; i++) {
+      let pos = window.pageYOffset * 0.5;
+      target[i].style.transform = "translate3d(0px, " + pos + "px, 0px)"
+
+    }
+
+
+  });
 
 }
-let testScroll;
 
-function paraScroll() {
-
-}
 
 function animateObserve() {
   const upAnim = document.querySelectorAll(".anim");
@@ -102,7 +114,7 @@ function toggleMenu() {
 //   }
 // });
 
-window.addEventListener("scroll", hideNav);
+//window.addEventListener("scroll", hideNav);
 
 function hideNav() {
   document.querySelector("nav").style.opacity = 0;

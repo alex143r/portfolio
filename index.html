@@ -13,22 +13,24 @@
   <header>
     <nav>
       <ul class="navstyle logo">
-        <a href="index.html">AOT</a>
+        <a href="index.html" class="link">AOT</a>
       </ul>
 
       <div id="menuknap" class="">☰</div>
       <ul id="menu" class="navstyle hide">
-        <li><a href="">About me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="" class="link">About me</a></li>
+        <li><a href="projects.html" class="link">Projects</a></li>
+        <li><a href="contact.html" class="link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="content">
     <div class="content_wrapper">
-      <div class="img_wrap anim anim_up " data-delay="1.5s">
-        <img src="pic/me7.jpg" class="anim parallax" />
+      <div class="img_wrap scroll" data-delay="1.5s">
+        <div class="para_wrap">
+          <img src="pic/me6.jpg" class="anim" />
+        </div>
       </div>
       <div class="text_wrapper">
         <h1 id="intro_title" class="anim anim_up" data-delay=".5s">
@@ -55,6 +57,8 @@
         </div>
       </div>
     </div>
+  </section>
+  <section>
     <div id="about_wrapper">
       <div id="skills_container">
         <h2 id="skills_title" class="about_title">Skills</h2>
@@ -63,12 +67,14 @@
           <li class="anim anim_up" data-delay=".5s">Css</li>
           <li class="anim anim_up" data-delay=".5s">Javascript</li>
           <li class="anim anim_up" data-delay=".5s">Git/Github</li>
+
+
         </ul>
       </div>
 
       <div id="about_container">
-        <h2 class="about_title">About Me</h2>
-        <p>
+        <h2 class=" about_title anim anim_up" data-delay=".5s">About Me</h2>
+        <p class="anim anim_up" data-delay=".5s">
           My name is Alexander Obel Tyllesen, and i'm 20 year old
           Multimediadesign student studying at KEA. I have a big love for web
           development, and as a frontend developer i love to work on and
@@ -84,11 +90,11 @@
       <div class="timeline_wrapper">
         <div class="timeline_item">
           <a class="image_width">
-            <div class="timeline_image_wrapper anim anim_up" data-delay="1.5s">
-              <img class="image_inner parallax" src="projects/snifs_sparehus.png"></img>
+            <div class="timeline_image_wrapper parallax " data-delay="1.5s">
+              <img class="image_inner" src="projects/snifs_sparehus.png"></img>
             </div>
           </a>
-          <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
+          <div class="timeline_name_wrapper" data-delay=".5s">
             <a href="">
               <div class="timeline_year">2020</div>
               <h2 class="timeline_name">Snifs Sparehus</h2>
@@ -96,10 +102,10 @@
           </div>
         </div>
 
-        <div class="timeline_item  anim anim_up" data-delay=".5s">
+        <div class="timeline_item" data-delay=".5s">
           <a class="image_width">
-            <div class="timeline_image_wrapper anim anim_up" data-delay=".5s">
-              <img class="image_inner parallax" src='projects/hogwarts7.PNG'></img>
+            <div class="timeline_image_wrapper parallax" data-delay=".5s">
+              <img class="image_inner" src='projects/hogwarts7.PNG'></img>
             </div>
           </a>
           <div class=" timeline_name_wrapper">
@@ -112,8 +118,8 @@
 
         <div class="timeline_item">
           <a class="image_width">
-            <div class="timeline_image_wrapper" data-type="parallax">
-              <img class="image_inner parallax" src='projects/gittebjorn.PNG'></img>
+            <div class="timeline_image_wrapper parallax">
+              <img class="image_inner " src='projects/gittebjorn.PNG'></img>
             </div>
           </a>
           <div class="timeline_name_wrapper">
@@ -126,9 +132,8 @@
       </div>
     </div>
   </section>
-  <script src="script.js"></script>
   <script src="simpleParallax.js"></script>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
