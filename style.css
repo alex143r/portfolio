@@ -181,11 +181,15 @@ section {
   padding: 10px 25px;
   font-size: .9em;
   position: relative;
-  background: transparent;
   border: 1px solid rgba(0, 0, 0, .3);
   transition: all 1s ease;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  background-color: #7395ae;
+  color: white;
+  font-family: mulli, sans-serif;
+  font-family: bc-alphapipe, sans-serif;
+  letter-spacing: 1px;
 }
 
 .timeline_btn::before {
@@ -194,17 +198,31 @@ section {
   top: 90%;
   left: 0;
   height: 10%;
-  width: 10%;
-  background: #7395ae;
+  width: 0%;
+  background: black;
+  /* #557a95
+  #b1a296*/
+  ;
   transition: all 1s ease;
-  z-index: -1;
+  z-index: 2;
+}
+
+.timeline_btn a {
+  z-index: 999;
 }
 
 .timeline_btn:hover::before {
   width: 100%;
   transition: all .5s ease-in-out;
   border: 0;
-  z-index: -1;
+  z-index: 2;
+}
+
+.timeline_wrapper a {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+
 }
 
 .timeline_btn:hover {
@@ -217,18 +235,23 @@ section {
   font-size: 1.2rem;
   line-height: 30px;
   font-family: muli, sans-serif;
-  color: rgb(63, 63, 63);
+  color: rgb(36, 36, 36);
 
 }
 
 .timeline_wrapper h2 {
   font-size: 2.2rem;
   font-family: bc-alphapipe, sans-serif;
+  font-weight: 700;
 }
 
 .timeline_wrapper h3 {
   color: rgb(100, 100, 100);
   font-family: muli, sans-serif;
+}
+
+.timeline_wrapper a:hover {
+  transform: scale(1.02);
 }
 
 /* Animations */
@@ -437,8 +460,7 @@ section {
     display: flex;
     /*flex-wrap: wrap;*/
     /* padding-top: calc(30vw + 100vh);*/
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding: 10vh 0;
     margin-bottom: 5vw;
     width: 100%;
 
@@ -489,7 +511,7 @@ section {
     text-align: center;
     margin-bottom: 0;
     font-family: muli, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
 
