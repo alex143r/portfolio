@@ -1,5 +1,6 @@
 "use strict";
 
+
 window.addEventListener("load", start);
 
 function start() {
@@ -8,7 +9,7 @@ function start() {
   animateObserve();
   let images = document.querySelectorAll(".parallax");
   new simpleParallax(images, {
-    scale: 1.2,
+    scale: 1.3,
     transition: 'cubic-bezier(0,0,0,1)'
   });
 
@@ -17,14 +18,25 @@ function start() {
 
     let length = target.length;
     for (let i = 0; i < length; i++) {
-      let pos = window.pageYOffset * 0.5;
-      target[i].style.transform = "translate3d(0px, " + pos + "px, 0px)"
+      if (window.innerWidth >= 768) {
+        let pos = window.pageYOffset * 0.5;
+        target[i].style.transform = "translate3d(0px, " + pos + "px, 0px)"
+      } else {
+        target[i].style.transform = "translate3d(0px, " + 0 + "px, 0px)"
 
+      }
     }
 
 
   });
+  //getBackground();
+}
 
+async function getBackground() {
+  let response = await fetch("waves.svg");
+  let mySvgData = await response.text();
+  console.log(document.querySelector(".background"));
+  document.querySelector(".background").innerHTML = mySvgData;
 }
 
 
@@ -98,35 +110,8 @@ function toggleMenu() {
   } else {
     document.querySelector("#menuknap").textContent = "X";
   }
+
 }
 
-// window.addEventListener("scroll", function (e) {
-//   const target = document
-//     .querySelector(".show_scroll li")
-//     .getBoundingClientRect();
-//   console.log(target);
-//   let scrolled = window.pageYOffset;
 
-//   if (scrolled > 920) {
-//     document.querySelector(".show_scroll").classList.add("bottom_fade");
-//     document.querySelector(".show_scroll").style.opacity = "1";
-//   }
-// });
-
-//window.addEventListener("scroll", hideNav);
-
-function hideNav() {
-  document.querySelector("nav").style.opacity = 0;
-  //document.querySelector("nav").style.top = "-40px";
-
-  let currScroll = window.pageYOffset;
-
-  setTimeout(showNav, 200);
-
-  function showNav() {
-    if (currScroll === window.pageYOffset) {
-      document.querySelector("nav").style.opacity = 1;
-      //document.querySelector("nav").style.top = "0px";
-    }
-  }
-}
+//barba.init

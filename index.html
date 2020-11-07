@@ -7,6 +7,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/dtq5ngs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -18,9 +20,9 @@
 
       <div id="menuknap" class="">☰</div>
       <ul id="menu" class="navstyle hide">
-        <li><a href="about.html" class="link">About me</a></li>
-        <li><a href="#full_timeline" class="link">Projects</a></li>
-        <li><a href="contact.html" class="link">Contact</a></li>
+        <li><a href="index.html#about" class="link">About me</a></li>
+        <li><a href="index.html#full_timeline" class="link">Projects</a></li>
+        <li><a href="index.html#footer" class="link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +31,7 @@
     <div class="content_wrapper">
       <div class="img_wrap scroll" data-delay="1.5s">
         <div class="para_wrap">
-          <img src="pic/me6.jpg" class="anim" />
+          <img src="pic/me_irl.jpg" class="anim" />
         </div>
       </div>
       <div class="text_wrapper">
@@ -57,8 +59,9 @@
         </div>
       </div>
     </div>
+     <!-- <div class="background"></div>  -->
   </section>
-  <section>
+  <section id="about">
     <div id="about_wrapper">
       <div id="skills_container">
         <h2 id="skills_title" class="about_title">Skills</h2>
@@ -66,7 +69,9 @@
           <li class="anim anim_up" data-delay=".5s">Html</li>
           <li class="anim anim_up" data-delay=".5s">Css</li>
           <li class="anim anim_up" data-delay=".5s">Javascript</li>
-          <li class="anim anim_up" data-delay=".5s">Git/Github</li>
+          <li class="anim anim_up" data-delay=".5s">Git</li>
+          <li class="anim anim_up" data-delay=".5s">Adobe</li>
+          <li class="anim anim_up" data-delay=".5s">REST API</li>
 
 
         </ul>
@@ -75,11 +80,12 @@
       <div id="about_container">
         <h2 class=" about_title anim anim_up" data-delay=".5s">About Me</h2>
         <p class="anim anim_up" data-delay=".5s">
-          My name is Alexander Obel Tyllesen, and i'm 20 year old
+          My name is Alexander Obel Tyllesen, and i'm 21 year old
           Multimediadesign student studying at KEA. I have a big love for web
-          development, and as a frontend developer i Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          aliquid ex similique dolorum dignissimos nostrum natus soluta animi alias molestias eos fuga eius, magni
-          repudiandae quis adipisci dolor ullam beatae.
+          development, and as my chosen current elective, im studying front-end design to improve those skills. 
+        </p><p>As a passionate and hard working front-end developer, i love coding new solutions to different types of problems or requirements. 
+          Next to my study i currently work for DLG in Land & Fritid, where i'm a student assistant. </p><p> job involves helping maintain and update their backend, 
+          while also assisting in creating and sending newsletters to customers. 
         </p>
 
       </div>
@@ -89,67 +95,25 @@
       <div id="timeline">
         <div class="timeline_line"></div>
         <div class="timeline_wrapper">
-          <a class="anim anim_up" data-delay="1s">
-            <div class="timeline_image_wrapper parallax" data-delay="1.5s">
-              <img class="image_inner" src="projects/snifs_sparehus.png"></img>
-
-            </div>
-          </a>
           <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
-            <h2 class="timeline_name">Snifs Sparehus</h2>
+            <h2 class="timeline_name">Gittebjorn.dk</h2>
             <h3 class="timeline_year">2020</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam at eligendi dolorem repellendus? Beatae
-              quidem voluptas corrupti, minima facere maxime distinctio eveniet libero laborum, animi eligendi, quae rem
-              earum nam iure tempore!</p>
-            <a href="http://alexandert.dk/kea/12_aa/snif-game/" target="_blank"><button class="timeline_btn">View
-                project</button></a>
-          </div>
-
-          <a class="anim anim_up" data-delay=".5s">
-            <div class="timeline_image_wrapper parallax" data-delay="1s">
-              <img class="image_inner" src='projects/hogwarts7.PNG'></img>
-            </div>
-          </a>
-          <div class=" timeline_name_wrapper anim anim_up" data-delay=".5s">
-            <h2 class="timeline_name">Hogwarts Student List</h2>
-            <h3 class="timeline_year">2020</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam at eligendi dolorem repellendus? Beatae
-              quidem voluptas corrupti, minima facere maxime distinctio eveniet libero laborum, animi eligendi, quae rem
-              earum nam iure tempore!</p>
-            <a href="http://alexandert.dk/kea/11_cvd/hogwartsstudentlist/" target="_blank"><button
+            <p>This project we made a new website for a goldsmith. She wanted a webpage, where you could view her personal art but also see the goldsmith courses she offers and eventually sign up. </p>
+            <a href="http://alexandert.dk/kea/10_eksamen/gittebjorn/index.html" target="_blank"><button
                 class="timeline_btn">View
                 project</button></a>
           </div>
-
           <a class="anim anim_up" data-delay="1s">
             <div class="timeline_image_wrapper parallax">
               <img class="image_inner " src='projects/gittebjorn.PNG'></img>
             </div>
           </a>
           <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
-            <h2 class="timeline_name">Gittebjorn.dk</h2>
+            <h2 class="timeline_name">Tuborg Nul Kampagnesite</h2>
             <h3 class="timeline_year">2020</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam at eligendi dolorem repellendus? Beatae
-              quidem voluptas corrupti, minima facere maxime distinctio eveniet libero laborum, animi eligendi, quae rem
-              earum nam iure tempore!</p>
-            <a href="http://alexandert.dk/kea/10_eksamen/gittebjorn/index.html" target="_blank"><button
+            <p>For this project we made a campaignsite for Tuborg's new alcohol-free beer, Tuborg Nul. The project included creating a website and doing field and market research to figure out how to advertise their new alcohol-free beer.</p>
+            <a href="http://alexandert.dk/kea/08_bd/tuborgnul/index.html" target="_blank"><button
                 class="timeline_btn">View
-                project</button></a>
-          </div>
-
-
-          <a class="anim anim_up" data-delay="1s">
-            <div class="timeline_image_wrapper parallax">
-              <img class="image_inner " src='projects/21_5.PNG'></img>
-            </div>
-          </a>
-          <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
-            <h2 class="timeline_name">21-5</h2>
-            <h3 class="timeline_year">2020</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam at eligendi dolorem repellendus? Beatae
-              quidem voluptas corrupti, minima facere maxime distinctio eveniet libero laborum, animi eligendi, quae rem
-              earum nam iure tempore!</p>
-            <a href="http://alexandert.dk/kea/09_cms/21-5/index.html" target="_blank"><button class="timeline_btn">View
                 project</button></a>
           </div>
 
@@ -157,23 +121,77 @@
             <div class="timeline_image_wrapper parallax">
               <img class="image_inner " src='projects/tuborg_nul.PNG'></img>
             </div>
-          </a>
+
           <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
-            <h2 class="timeline_name">Tuborg Nul Kampagnesite</h2>
+            <h2 class="timeline_name">Snifs Sparehus</h2>
             <h3 class="timeline_year">2020</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam at eligendi dolorem repellendus? Beatae
-              quidem voluptas corrupti, minima facere maxime distinctio eveniet libero laborum, animi eligendi, quae rem
-              earum nam iure tempore!</p>
-            <a href="http://alexandert.dk/kea/08_bd/tuborgnul/index.html" target="_blank"><button
+            <p>For this project we worked with SVG's and importing and manipulating them with css animations to make a game targetted at 3-6 year olds. The focus of the game had to teach kids about saving energy.</p>
+            <a href="http://alexandert.dk/kea/12_aa/snif-game/" target="_blank"><button class="timeline_btn">View
+                project</button></a>
+          </div>
+          <a class="anim anim_up" data-delay="1s">
+            <div class="timeline_image_wrapper parallax" data-delay="1.5s">
+              <img class="image_inner" src="projects/snifs_sparehus.png"></img>
+
+            </div>
+          </a>
+          
+
+          <div class=" timeline_name_wrapper anim anim_up" data-delay=".5s">
+            <h2 class="timeline_name">Hogwarts Student List</h2>
+            <h3 class="timeline_year">2020</h3>
+            <p>For this project we worked with importing JSON in Javascript and manipulating it to display a list of students. The JSON was a mess, so the task involved writing generalised functions that would fix the flawed JSON. Furthermore, we added search, sort & filter options, and abilities to fx. expel a student.</p>
+            <a href="http://alexandert.dk/kea/11_cvd/hogwartsstudentlist/" target="_blank"><button
                 class="timeline_btn">View
                 project</button></a>
           </div>
-        </div>
+          <a class="anim anim_up" data-delay=".5s">
+            <div class="timeline_image_wrapper parallax" data-delay="1s">
+              <img class="image_inner" src='projects/hogwarts7.PNG'></img>
+            </div>
+          </a>
+          
 
+     
+     
+
+          
+          <div class="timeline_name_wrapper anim anim_up" data-delay=".5s">
+            <h2 class="timeline_name">21-5</h2>
+            <h3 class="timeline_year">2020</h3>
+            <p>This project was a redesign and restructuring of a webpage, where they have a lot of information, but needed it sorted into more user-friendly navigation.</p>
+            <a href="http://alexandert.dk/kea/09_cms/21-5/index.html" target="_blank"><button class="timeline_btn">View
+                project</button></a>
+          </div>
+          <a class="anim anim_up" data-delay="1s">
+            <div class="timeline_image_wrapper parallax">
+              <img class="image_inner " src='projects/21_5.PNG'></img>
+            </div>
+          </a>
+
+
+       
+       
+          </a>
+        </div>
       </div>
     </div>
   </section>
-  <script src="simpleParallax.js"></script>
+	<footer id="footer">
+      <h2>Contact</h2>
+      <div id="mail">
+       <h3>Email:</h3>
+        <a href="mailto:atyllesen@gmail.com">
+          <p>atyllesen@gmail.com</p>
+        </a>
+      </div>
+			<div class="linked">
+        <h3>Connect with me on linked in:</h3>
+        <a class="linked" href="https://www.linkedin.com/in/alexander-obel-tyllesen/">	<i class="fa fa-linkedin-square" style="font-size:56px; color:blue"></i></a>
+
+      </div>
+
+	</footer><script src="simpleParallax.js"></script>
   <script src="script.js"></script>
 </body>
 
