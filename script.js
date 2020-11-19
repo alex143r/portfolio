@@ -29,14 +29,6 @@ function start() {
 
 
   });
-  //getBackground();
-}
-
-async function getBackground() {
-  let response = await fetch("waves.svg");
-  let mySvgData = await response.text();
-  console.log(document.querySelector(".background"));
-  document.querySelector(".background").innerHTML = mySvgData;
 }
 
 
@@ -101,7 +93,6 @@ function animateObserve() {
   });
 }
 
-
 function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector("#menu").classList.toggle("hide");
@@ -112,6 +103,3 @@ function toggleMenu() {
   }
 
 }
-
-
-//barba.init

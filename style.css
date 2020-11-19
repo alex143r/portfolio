@@ -428,6 +428,7 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+
 .timeline_btn:hover {
   /* transform: scale(1.03);*/
   transition: none;
@@ -451,8 +452,9 @@ section {
   font-family: muli, sans-serif;
 }
 
-.timeline_wrapper a:hover {
-  transform: scale(1.02);
+.simpleParallax:hover {
+  transition: .5s ease-in-out;
+  transform: scale(1.01);
 }
 
 /* Footer */
@@ -575,16 +577,6 @@ footer h3 {
 .timeline_item a {
   transition: 0.5s;
 }
-
-/*
-.timeline_item a:hover {
-  width: 49.6vw;
-}
-
-#menu li:hover {
-  text-decoration: underline;
-}
-*/
 
 /* Finish animations */
 @media only screen and (min-width: 768px) {
