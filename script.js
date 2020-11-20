@@ -41,12 +41,13 @@ function animateObserve() {
 
       if (entry.intersectionRatio > 0) {
         entry.target.style.animation = `anim_up_kf ${entry.target.dataset.delay} forwards ease-out`;
+
         if (entry.target.dataset.type === "anim_side") {
           console.log(entry);
           entry.target.style.animation = `anim_side_kf ${entry.target.dataset.delay} forwards .2s ease-out`;
-        }
-
-
+        }        
+        observer.unobserve(entry.target);
+        
       } else {
         entry.target.style.animation = "none";
       }
