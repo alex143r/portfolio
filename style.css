@@ -384,7 +384,7 @@ section {
   bottom: 0;
   left: 50%;
   width: 1px;
-  background-color: #d1d1d1;
+  background-color: #f1f1f1;
   display: block;
 }
 #timeline {
@@ -654,6 +654,7 @@ footer h3 {
     width: 100%;
   }
 
+
   #skills_container {
     margin-left: 25%;
     flex: 0 0 33.333333%;
@@ -668,7 +669,10 @@ footer h3 {
     padding-left: 4vw;
     max-width: 35vw;
   }
-
+  .timeline_line{
+    background-color: #d1d1d1;
+  }
+  
   .timeline_wrapper {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 80px 40px;
