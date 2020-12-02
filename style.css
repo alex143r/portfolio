@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -127,7 +128,7 @@ nav a {
 .link:hover:after {
   width: 100%;
   left: 0;
-  background: #7395ae;
+  background: black;
 }
 
 li,
@@ -164,13 +165,20 @@ section {
 }
 
 /* Content / Forside */
+#content {
+  background-image: url(wave.svg);
+  background-position: 40% 50%;
+  background-size: cover;
+}
+#content svg {
+  transform: scale(-2, 2);
+}
 .content_wrapper {
   max-width: 1200px;
   margin: 0 auto;
   z-index: 10;
   padding: 2vh 0 0;
   display: flex;
-  background-color: white;
   padding-bottom: 10vw;
   flex-direction: column-reverse;
 }
@@ -202,7 +210,6 @@ section {
 }
 
 .text_wrapper p {
-  padding-top: 2vw;
   font-size: 1.8rem;
 }
 
@@ -214,7 +221,6 @@ section {
   left: 50%;
   width: 3vw;
   height: 6vh;
-  background: white;
   align-items: center;
   justify-content: center;
 }
@@ -322,6 +328,9 @@ section {
 }
 
 /* timeline */
+#full_timeline {
+  margin-top: 15vh;
+}
 #timeline {
   max-width: 1200px;
   margin: 2vw;
@@ -339,7 +348,7 @@ section {
   transition: all 1s ease;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  background-color: #7395ae;
+  background-color: #5699d2;
   color: white;
   font-family: mulli, sans-serif;
   font-family: bc-alphapipe, sans-serif;
@@ -428,7 +437,6 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 .timeline_btn:hover {
   /* transform: scale(1.03);*/
   transition: none;
@@ -448,12 +456,12 @@ section {
 }
 
 .timeline_wrapper h3 {
-  color: rgb(100, 100, 100);
+  color: #5699d2;
   font-family: muli, sans-serif;
 }
 
 .simpleParallax:hover {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   transform: scale(1.01);
 }
 
@@ -462,24 +470,30 @@ section {
 footer {
   width: 100%;
   padding: 40px 30px;
-  background-color: #938e94;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   justify-content: space-between;
-  color: white;
 }
 
 footer .linked {
-  text-align: right;
   grid-column: 2/3;
+  color: black;
+  text-align: right;
 }
-footer #mail {
+
+footer #contact {
   grid-column: 1/2;
+  color: black;
+}
+footer #contact a {
+  color: black;
+}
+footer #contact a:hover {
+  text-decoration: underline;
 }
 
 footer p {
-  color: #fff;
   margin: 1rem 0 2rem 0;
   font-size: 1.2rem;
 }
@@ -633,7 +647,7 @@ footer h3 {
 
   .content_wrapper .img_wrap {
     margin: 0 -8% 0 0;
-    width: 50%;
+    width: 45%;
   }
 
   .text_wrapper {
@@ -654,7 +668,6 @@ footer h3 {
     width: 100%;
   }
 
-
   #skills_container {
     margin-left: 25%;
     flex: 0 0 33.333333%;
@@ -669,10 +682,10 @@ footer h3 {
     padding-left: 4vw;
     max-width: 35vw;
   }
-  .timeline_line{
+  .timeline_line {
     background-color: #d1d1d1;
   }
-  
+
   .timeline_wrapper {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 80px 40px;
@@ -695,6 +708,13 @@ footer h3 {
 
   .timeline_wrapper a {
     grid-column: 5/9;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .linked {
+    grid-column: 3/4;
   }
 }
 
